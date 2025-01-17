@@ -11,7 +11,8 @@
     "render-build": "npm install && npm run build",
     "test": "npx cypress run --browser electron",
     "test-component": "npx cypress run --component",
-    "test-gui": "npx cypress open"
+    "test-gui": "npx cypress open",
+    "lint": "eslint src --ext js,tsx --report-unused-disable-directives --max-warnings 0"
   },
   "keywords": [],
   "author": "",
@@ -19,9 +20,22 @@
   "devDependencies": {
     "concurrently": "^8.2.0",
     "cypress": "^13.13.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "ts-node": "^10.9.2"
+     "@testing-library/react": "^16.0.0",
+    "@types/jest": "^29.5.12",
+    "@types/pretty": "^2.0.3",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "@vitejs/plugin-react": "^4.0.3",
+    "eslint": "^8.45.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.3",
+    "happy-dom": "^14.12.3",
+    "pretty": "^2.0.0",
+    "typescript": "^5.0.2",
+    "vite": "^4.4.5",
+    "vitest": "^2.0.4"
   },
   "dependencies": {
     "@vitejs/plugin-react": "^4.3.1",
